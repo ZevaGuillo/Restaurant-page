@@ -2,8 +2,7 @@ function loadAbout(){
     const main = document.getElementById('main');
     main.textContent = "";
     const div = document.createElement('div');
-    div.style.width = '100%';
-    div.style.height = '100%';
+    div.style.backgroundColor = 'red';
 
     main.appendChild(div);
 }
