@@ -1,12 +1,12 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 .content{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -19,7 +19,8 @@
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    background-color: yellow;
+    min-height: 20vh;
+    background: yellow;
 }
 .title{
     display: flex;
@@ -45,10 +46,35 @@ button{
 
 .main{
     background-color: violet;
+    width: 100%;
+    min-height: 75vh;
+    background: rgba(0,0,0,.55) url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode:darken;
+    display: flex;
+    justify-content: center;
+}
+
+.main div {
     width: 70vw;
-    min-height: 70vh;
 }
 
 .active{
     background-color: blueviolet;
+}
+
+.home{
+    height: 100%;
+    padding: 1rem;
+    color: #f2f2f2;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home h2{
+    width: 70vw;
+    text-align: center;
 }
