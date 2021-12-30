@@ -8,7 +8,7 @@ function createHeader(){
     header.classList.add('header');
     header.innerHTML = `
         <div class="title">
-            <h1>Mou´s pizza</h1>
+            <h1>Mou´sPizza</h1>
             <i class="fas fa-pizza-slice"></i>
         </div>
     `
@@ -72,9 +72,22 @@ function setActiveButton(button) {
       if (button !== this) {
         button.classList.remove('active');
       }
-    });
+    }); 
   
     button.classList.add("active");
+  }
+
+  function createFooter(){
+      const footer = document.createElement('footer')
+      footer.classList.add('footer');
+      footer.style.backgroundColor='reb'
+      footer.innerHTML= `
+        <p>Copyright © 2021 ZevaGuillo</p>
+        <a href="https://github.com/ZevaGuillo">
+            <i class="fab fa-github" aria-hidden="true"></i>
+        </a>
+      `
+      return footer;
   }
 
 function initialPage(){
@@ -82,6 +95,7 @@ function initialPage(){
 
     content.appendChild(createHeader());
     content.appendChild(createMain())
+    content.appendChild(createFooter());
 }
 
 export default initialPage;

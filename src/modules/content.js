@@ -54,7 +54,6 @@ function loadContent(){
     const main = document.getElementById('main');
     main.textContent = "";
     const div = document.createElement('div');
-    div.style.backgroundColor = 'green';
     div.appendChild(gridPizzas());
 
     main.appendChild(div);

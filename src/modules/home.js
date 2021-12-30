@@ -1,11 +1,14 @@
 function messageHome(){
     const divTitle = document.createElement('div');
     divTitle.classList.add('titleHome');
+    const i = document.createElement('i');
+    i.classList.add('fa-pizza-slice');
+    i.classList.add('fas');
     const h2 = document.createElement('h2');
     h2.textContent = "Si tienes hambre y quieres comer una deliciosa pizza, Mou´s pizza es la mejor opción. "
 
 
-
+    divTitle.appendChild(i);
     divTitle.appendChild(h2);
     return divTitle;
 }
