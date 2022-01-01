@@ -102,6 +102,7 @@ button:focus {
 
 .active{
     background-color: var(--first-color);
+    color: var(--light-color);
 }
 
 .main{
